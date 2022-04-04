@@ -1,0 +1,21 @@
+{
+  "name": "webbasedformom",
+  "version": "1.0.0",
+  "description": "A web based form for some python processes in ForMOM",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "author": "NJDEP, Michael Gorbunov",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "formidable": "^2.0.1",
+    "moment": "^2.29.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

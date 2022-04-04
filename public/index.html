@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ForMOM Processor</title>
+</head>
+<body>
+	<h1>
+		ForMOM Processor
+	</h1>
+
+	<form method="POST" action="/submit-form-files" enctype="multipart/form-data">
+		<label for="objFile"> Objective .csv </label>
+		<input type="file" id="objFile" name="objFile" /> 
+		<br />
+		<label for="constFile"> Constraint .csv </label>
+		<input type="file" id="constFile" name="constFile" />
+		<br />
+		<br />
+		<input type="radio" id="datConvert" value="dat" name="chooseOutput" /> 
+		<label for="datConvert">Converted Dat File</label>
+		<input type="radio" id="runPyomo" value="pyomo" name="chooseOutput" /> 
+		<label for="datConvert">Pyomo Output</label>
+		<br />
+		<br />
+		<input type="submit" />
+	</form>
+</body>
+</html>
